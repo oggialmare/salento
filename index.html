@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OggiAlMare</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Immagine oggi al mare">
+            <!-- <h1>Oggi Al Mare</h1> -->
+            <h5>by Phoenizak</h5>
+            <p>Seleziona la città in cui ti trovi.</p>
+        </header>
+
+        <!-- pubblicità -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <h3>#ads</h3>
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <img src="ads.png" alt="Immagine popup">
+                <h2>Servizi di assistenza vari e creazione di grafiche e siti web</h2>
+                <p><i>by Kozak</i></p>
+                <a href="https://chrxstxqn.github.io/kozak" class="visit-btn">Visita ora</a>
+            </div>
+        </div>
+
+        <section class="input-section">
+            <select id="city-select">
+                <option value="">--Seleziona una città o paese del Salento--</option>
+                <!-- Elenco delle città, paesi e frazioni del Salento -->
+                <!-- ...opzioni delle città qui ... -->
+            </select>
+            <button onclick="searchWeather()">Calcola mare ideale</button>
+        </section>
+
+        <p><b><i>⚠️Attenzione! Il progetto è ancora in fase di sviluppo alcune informazioni potrebbero essere
+                    errate.⚠️</i></b></p>
+
+        <section class="result-section">
+            <div id="suggested-area" class="highlight"></div>
+            <div id="weather-info"></div>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
